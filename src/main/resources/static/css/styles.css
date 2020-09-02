@@ -114,6 +114,10 @@ html, body {
     background-color: #dddddd;
 }
 
+#chat-container .sender{
+    color: orangered;
+}
+
 #messageForm .input-message  {
     float: left;
     width: calc(100% - 85px);

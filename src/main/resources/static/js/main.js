@@ -59,8 +59,8 @@ function sendMessage(event) {
 
 function onMessageReceived(payload) {
     var message = JSON.parse(payload.body);
-
     var messageElement = document.createElement('li');
+
 
     if(message.type === 'JOIN') {
         messageElement.classList.add('event-message');
@@ -71,6 +71,9 @@ function onMessageReceived(payload) {
     } else {
         messageElement.classList.add('chat-message');
         var usernameElement = document.createElement('strong');
+        if(username === message.sender){
+            usernameElement.classList.add('sender');
+        }
         usernameElement.classList.add('nickname');
         var usernameText = document.createTextNode(message.sender);
         usernameElement.appendChild(usernameText);
