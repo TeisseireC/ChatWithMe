@@ -1,1 +1,30 @@
+ChatWithMe Project
 
+Back :
+Le back est en WebSocket avec Spring
+Les packages étant bien nommés nous retrouvons dans ceux-ci un WebSocketConfig, des controlleurs, un HandshakeInterceptor,
+un listener et le modele de Chat
+
+Front:
+Le front est fait en HTML, CSS et JS.
+L'HTML va définir la structure visuelle de base de l'application, le CSS gère le style de toute l'application,
+le JS va ajouter dans éléments dans le HTLM et ajouter les messages au fur et a mesure qu'ils sont envoyés.
+
+Configuration :
+- Java version 14 (14.0.1)
+- Server sur localhost port 8080 (default)
+- Projet Spring
+- Compilation et run par Maven
+
+Lancement de l'application :
+"mvnw spring-boot:run"
+
+Comment fonctionne l'application :
+-Ouvrez localhost:8080
+-Saisissez un nom / pseudo
+-Tapez vos messages
+
+Il est possible d'ouvrir plusieurs fenetres de chat afin de simuler une conversation.
+Pour cela ouvrez une nouvelle fenetre de votre navigateur et tapez localhost:8080/login .
+Vous pourrez choisir un autre nom / pseudo qui rejoindra votre premier chat.
+Faite cette opération autant que vous voulez pour simuler autant de personne que souhaité.
